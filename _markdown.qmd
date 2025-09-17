@@ -1,0 +1,37 @@
+## Syntax of Markdown
+This section is prepared by Jingang Chen, an undergraduate junior pursuing  a 
+dual degree in computer science and statistical data science.
+
+This section will focus on the syntax of Markdown, which is a  lightweight markup language that allows to user to write content in plain text format, which can be rendered to various formats like HTML and PDF, and is widely used in open-source documentation.
+
+### Headers
+In markdown, creating heading levels for sections and subsections are denoted by `#` (atx-style) in the beginning of the line. The number of hashtags denote the heading level, with more hashtags indicating smaller heading levels. There are a total of 6 heading levels using the hashtags.
+
+```markdown
+# Header 1 (Main)
+## Header 2 (Subheading)
+### Header 3 (Subheading)
+#### Header 4
+##### Header 5
+###### Header 6
+```
+# Header 1
+# Header 2
+### Header 3
+#### Header 4
+##### Header 5
+###### Header 6
+
+> A space is required after the hashtags to denote that it is a heading
+
+Headings can also be denoted by using underlined `=` and `-` signs, though this will only work for the first and second level headers respectively.
+
+```markdown
+Header 1
+===
+Header 2
+----
+```
+Any amount of `=` and `-` will work to create those top two headings.
+
+## Paragraph and Line Break Convention
