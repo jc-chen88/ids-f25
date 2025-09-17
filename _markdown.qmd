@@ -2,10 +2,16 @@
 This section is prepared by Jingang Chen, an undergraduate junior pursuing  a 
 dual degree in computer science and statistical data science.
 
-This section will focus on the syntax of Markdown, which is a  lightweight markup language that allows to user to write content in plain text format, which can be rendered to various formats like HTML and PDF, and is widely used in open-source documentation.
+This section will focus on the syntax of Markdown, which is a  lightweight 
+markup language that allows to user to write content in plain text format, 
+which can be rendered to various formats like HTML and PDF, and is widely used 
+in open-source documentation.
 
 ### Headers
-In markdown, creating heading levels for sections and subsections are denoted by `#` (atx-style) in the beginning of the line. The number of hashtags denote the heading level, with more hashtags indicating smaller heading levels. There are a total of 6 heading levels using the hashtags.
+In markdown, creating heading levels for sections and subsections are denoted 
+by `#` (atx-style) in the beginning of the line. The number of hashtags denote 
+the heading level, with more hashtags indicating smaller heading levels. 
+There are a total of 6 heading levels using the hashtags.
 
 ```markdown
 # Header 1 (Main)
@@ -15,16 +21,11 @@ In markdown, creating heading levels for sections and subsections are denoted by
 ##### Header 5
 ###### Header 6
 ```
-# Header 1
-# Header 2
-### Header 3
-#### Header 4
-##### Header 5
-###### Header 6
 
 > A space is required after the hashtags to denote that it is a heading
 
-Headings can also be denoted by using underlined `=` and `-` signs, though this will only work for the first and second level headers respectively.
+Headings can also be denoted by using underlined `=` and `-` signs, though this 
+will only work for the first and second level headers respectively.
 
 ```markdown
 Header 1
@@ -32,6 +33,34 @@ Header 1
 Header 2
 ----
 ```
-Any amount of `=` and `-` will work to create those top two headings.
+Any amount of `=` and `-` signs will work to create those top two headings.
 
 ## Paragraph and Line Break Convention
+To seperate text into paragraphs, make sure there is at least one blank space 
+between the blocks of texts.
+
+```markdown
+This is the first pargraph which can contain multiple lines, and as long there
+is no blank line in this, then this block of text is one paragraph.
+
+This is an example of a second paragraph. This one is seperated by a blank line
+from the paragraph above to denote a different paragraph.
+```
+This is the first pargraph which can contain multiple lines, and as long there
+is no blank line in this, then this block of text is one paragraph.
+
+This is an example of a second paragraph. This one is seperated by a blank line
+from the paragraph above to denote a different paragraph.
+
+- - -
+
+To create a line break within a paragraph, end whatever line you're on with two
+spaces, then press enter/return to start a new line.
+
+```markdown
+This is one line.  
+This is another line that is seperated from the line above.
+```
+
+This is one line.  
+This is another line that is seperated from the line above.
