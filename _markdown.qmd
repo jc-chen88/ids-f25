@@ -397,3 +397,17 @@ Example of reference-style link leading to the [Markdown Guide][link].
 [link]: https://www.markdownguide.org/
 
 ### Images
+
+To insert an image into markdown, the convention is to first add `!`, followed 
+by a caption to the image wrapped in `[]`, and finally the file path or URL to 
+the image enclosed with `()`.
+
+In addition, the image can be embedded with a link by first wrapping the 
+3 parameters mentioned above in `[]`, followed by the link wrapped in `()`.
+
+```markdown
+[![UConn Husky Logo](C:\Users\jinga\Downloads\uconnlogo.png)](https://uconn.edu/)
+```
+Output:
+
+[![UConn Husky Logo](C:\Users\jinga\Downloads\uconnlogo.png)](https://uconn.edu/)
