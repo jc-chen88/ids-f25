@@ -178,6 +178,57 @@ Output:
 \**not bolded**\
 \[Not a link]\
 
+### Blockquotes
+Blockquotes is a way to highlight quoted content or important information in the
+document, which is denoted by `>` in the beginning of the line.
+
+```markdown
+> This is a block quote
+> 
+> second block quote
+>
+> third block quote
+```
+**Output:**
+
+> This is a blockquote
+> 
+> second blockquote
+>
+> third blockquote
+
+To make sure that the blockquotes are seperated, make sure that each quote is 
+seperated by `>` with no text in that line. Putting blockquotes adjacent to 
+each other will result in all the text being in the same paragraph.
+
+```markdown
+> These blockquotes
+> are not seperated and
+> are all in one line
+```
+**Output:**
+
+> These blockquotes
+> are not seperated and
+> are all in one line
+
+Blockquotes can also be nested by using multiple `>` in one line.
+
+```markdown
+> This is a blockquote
+>
+> > This is a nested blockquote
+> >
+> > > Third level blockquote
+```
+**Output:**
+
+> This is a blockquote
+>
+> > This is a nested blockquote
+> >
+> > > Third level blockquote
+
 ### Lists
 
 Lists and nested lists can be structured in Markdown either unordered or 
@@ -204,7 +255,6 @@ and
 + Item 3
 ```
 
-and 
 
 ```markdown
 - Item 1
@@ -414,6 +464,7 @@ the code blocks.
 ```{python}
 print('some python code')
 ```
+
 ### Formulas and Equations
 Markdown supports LaTeX-style expressions. Mathematical expressions can either 
 be done inline (enclosing using `$`) or for display math (enclosed by `$$`).
