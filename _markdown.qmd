@@ -616,4 +616,15 @@ one sentence[^longnote]
 Seperate paragraph here to show that this isn't part of the footnote.
 
 ### Conclusion
+Markdown is a versatile markup language that simplifies writing for the web in 
+a way that is readable and convenient. Today, it is widely used to present the 
+work that is being done in a variety of areas, and Markdown provides a clean 
+way to organize the content being presented and structure the documents well.
 
+### Further Reading
+1. [Quarto Markdown Basics](
+    https://quarto.org/docs/authoring/markdown-basics.html)
+2. [The Complete Guide to Markdown](
+    https://www.tomarkdown.org/guides/markdown-complete-guide)
+3. [Markdown: Synatx by John Gruber](
+    https://daringfireball.net/projects/markdown/syntax#precode)
