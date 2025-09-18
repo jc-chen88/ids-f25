@@ -73,6 +73,46 @@ This is a third line seperated using the `<br>` break tag.
 > `<>` in Markdown is a HTML tag, which is another way to structure the
 document
 
+### Horizontal Rules
+Horizontal rules isually separate document sections, which can be done in 
+Markdown by adding 3 or more of one of 3 characters: `***`, `---`, or `___`.
+
+```markdown
+
+paragraph 1.
+
+******
+
+paragraph 2.
+
+------
+
+paragraph 3.
+
+______
+
+paragraph 4.
+```
+**Output:**
+
+paragraph 1.
+
+******
+
+paragraph 2.
+
+------
+
+paragraph 3.
+
+______
+
+paragraph 4.
+
+> Make sure when using the horizontal rulers, each of them is one blank line 
+above and below them. There shouldn't be any text above or below them 
+adjacently.
+
 ### Text Formatting
 
 #### Bolding and Italics
