@@ -71,7 +71,7 @@ This is one line.
 This is another line that is seperated from the line above. <br>
 This is a third line seperated using the `<br>` break tag
 
-### Text Fromatting
+### Text Formatting
 
 #### Bolding and Italics
 *Italic* text, uses single asterisks (*) or underscores (_) around the text, 
@@ -121,4 +121,64 @@ To highlight, bracket the desired text with `[]`, and follow that using
 |`[underlined text]{.underline}`              | [underlined text]{.underline} |
 |`[highlighted]{.mark}` <br> `<mark>higlighted</mark>` | [highlighted]{.mark} |
 
+### Code
 
+#### Inline Code
+Markdown allows for inline code and code blocks.
+
+To insert inline code, use the backticks `` ` `` around the text
+
+```markdown
+This is an example of `inline code` in a text.
+```
+**Output**: This is an example of `inline code` in a text.
+
+To display the `` ` `` as part of an inline code, surround the character with 
+` `` ` backticks and spacing them apart from `` ` ``.
+
+#### Code Blocks
+To create code blocks, ` ``` ` can be used.
+
+```
+    ```
+    some code
+    ```
+```
+Output:
+
+```
+some code
+```
+
+Alternatively, code blocks can be indented by identing four or more spaces
+prior to the code.
+
+    This is code using the indentation of four spaces
+        This line has more than four spaces
+
+A language can also be added to specify the language of the code blocks if
+` ``` ` is used.
+
+    ```python
+    print('some python code')
+    ```
+
+**Output**:
+
+```python
+print('some python code')
+```
+
+To make the code executable, put `{}` around the syntax language being used in
+the code blocks.
+
+```python
+    ```{{python}}
+    print("Some python code")
+    ```
+```
+
+**Output**:
+```{python}
+print('some python code')
+```
