@@ -567,3 +567,53 @@ Output:
 |        a  |       b  |    c   |    d    |
 |  e        |       f  |   g    |    h    |
 |   i       |        j |  k     |      l  |
+
+### Footnotes
+Footnotes, often denoted by superscripts, are placed at the bottom of 
+a page in a document, which helps provide additional information and references 
+related to a specific part of the text. To insert a footnote in a text, it is 
+done in the `[]`, where the first character inside of the brackets is `^`, 
+followed by the desired name of the footnote. After that is specified, 
+reference that footnote in a newline and put whatever note that is needed.
+
+```markdown
+This is where you can place a footnote,[^1] sometimes multiple can be placed in 
+one sentence[^longnote]
+
+[^1]: This is a footnote.
+
+[^longnote]: This is a long footnote, which can have paragraphs.
+   
+    Make sure to use the four spaces to inent so that the subsequent paragraphs 
+    belong to the same footnote.
+
+    ```
+    {code can also be inserted in here}
+    ```
+
+    End footnote
+
+Seperate paragraph here to show that this isn't part of the footnote.
+```
+**Output:**
+
+This is where you can place a footnote,[^1] sometimes multiple can be placed in 
+one sentence[^longnote]
+
+[^1]: This is a footnote.
+
+[^longnote]: This is a long footnote, which can have paragraphs.
+
+    Make sure to use the four spaces to inent so that the subsequent paragraphs 
+    belong to the same footnote.
+
+    ```
+    {code can also be inserted in here}
+    ```
+
+    End footnote
+
+Seperate paragraph here to show that this isn't part of the footnote.
+
+### Conclusion
+
