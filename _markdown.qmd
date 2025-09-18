@@ -74,7 +74,7 @@ This is a third line seperated using the `<br>` break tag.
 document
 
 ### Horizontal Rules
-Horizontal rules isually separate document sections, which can be done in 
+Horizontal rules visually separate document sections, which can be done in 
 Markdown by adding 3 or more of one of 3 characters: `***`, `---`, or `___`.
 
 ```markdown
@@ -172,7 +172,7 @@ If you want to display the Markdown syntax characters, it can be done by putting
 \**not bolded**\
 \[Not a link]\
 ```
-Output:
+**Output:**
 
 \# Not a heading\
 \**not bolded**\
@@ -198,7 +198,7 @@ document, which is denoted by `>` in the beginning of the line.
 > third blockquote
 
 To make sure that the blockquotes are seperated, make sure that each quote is 
-seperated by `>` with no text in that line. Putting blockquotes adjacent to 
+seperated by `>`'s with no text in that line. Putting blockquotes adjacent to 
 each other will result in all the text being in the same paragraph.
 
 ```markdown
