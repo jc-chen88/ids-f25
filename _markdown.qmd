@@ -61,14 +61,14 @@ also sufficient.
 
 ```markdown
 This is one line.  
-This is a line that is seperated from the line above using two spaces <br>
-This is a third line seperated using the `<br>` break tag
+This is a line that is seperated from the line above using two spaces. <br>
+This is a third line seperated using the `<br>` break tag.
 ```
 **Output:**
 
 This is one line.  
-This is another line that is seperated from the line above. <br>
-This is a third line seperated using the `<br>` break tag
+This is a line that is seperated from the line above using two spaces. <br>
+This is a third line seperated using the `<br>` break tag.
 
 > `<>` in Markdown is a HTML tag, which is another way to structure the
 document
@@ -374,8 +374,18 @@ the code blocks.
 ```{python}
 print('some python code')
 ```
-### Formulas
-Markdown supports LaTeX-style expressions. mathematical  expressions 
+### Formulas and Equations
+Markdown supports LaTeX-style expressions. Mathematical expressions can either 
+be done inline (enclosing using `$`) or for display math (enclosed by `$$`).
+
+|                  Syntax              |      Output         |
+|--------------------------------------|---------------------|
+|`Inline: $x^2 + y^2 = z^2$`           | Inline: $x^2 + y^2 = z^2$ |
+|`Display:` <br> `$$x^2 + y^2 = z^2$$` | Display: <br> $$x^2 + y^2 = z^2$$ |
+
+For mor information on how to use LaTeX expressions, visit 
+<https://www.overleaf.com/learn> and look under the "Mathematics" section.
+
 
 ### Link Embedding
 Links in Markdown can either be added inline or as a reference.
