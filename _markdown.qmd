@@ -2,6 +2,7 @@
 This section is prepared by Jingang Chen, an undergraduate junior pursuing  a 
 dual degree in computer science and statistical data science.
 
+### Introduction
 This section will focus on the syntax of Markdown, which is a lightweight 
 markup language that allows to user to write content in plain text format, 
 which can be rendered to various formats like HTML and PDF, and is widely used 
@@ -53,8 +54,6 @@ is no blank line in this, then this block of text is one paragraph.
 
 This is an example of a second paragraph. This one is seperated by a blank line
 from the paragraph above to denote a different paragraph.
-
-- - -
 
 To create a line break within a paragraph, end whatever line you're on with two
 spaces, then press enter/return to start a new line. The break tag `<br>` is 
@@ -123,6 +122,21 @@ To highlight, bracket the desired text with `[]`, and follow that using
 |---------------------------------------------|-------------------------------|
 |`[underlined text]{.underline}`              | [underlined text]{.underline} |
 |`[highlighted]{.mark}` <br> `<mark>higlighted</mark>` | [highlighted]{.mark} |
+
+#### Escape Characters
+If you want to display the Markdown syntax characters, it can be done by putting
+`\`  before and after the text.
+
+```markdown
+\# Not a heading\
+\**not bolded**\
+\[Not a link]\
+```
+Output:
+
+\# Not a heading\
+\**not bolded**\
+\[Not a link]\
 
 ### Lists
 
@@ -360,6 +374,8 @@ the code blocks.
 ```{python}
 print('some python code')
 ```
+### Formulas
+Markdown supports LaTeX-style expressions. mathematical  expressions 
 
 ### Link Embedding
 Links in Markdown can either be added inline or as a reference.
