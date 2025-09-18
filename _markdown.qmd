@@ -2,7 +2,7 @@
 This section is prepared by Jingang Chen, an undergraduate junior pursuing  a 
 dual degree in computer science and statistical data science.
 
-This section will focus on the syntax of Markdown, which is a  lightweight 
+This section will focus on the syntax of Markdown, which is a lightweight 
 markup language that allows to user to write content in plain text format, 
 which can be rendered to various formats like HTML and PDF, and is widely used 
 in open-source documentation.
@@ -411,3 +411,42 @@ In addition, the image can be embedded with a link by first wrapping the
 Output:
 
 [![UConn Husky Logo](C:\Users\jinga\Downloads\uconnlogo.png)](https://uconn.edu/)
+
+### Tables
+
+To create tables, the `|` character is used to seperate the table into columns,
+while the `-` is used to seperate the headers of the table from the rest of the 
+data.
+
+```markdown
+| Col 1 | Col 2 | Col 3 | Col 4 |
+|------|-----|----------|-------|
+|   a  |  b  |    c     |  d    |
+|  e   |  f  |  g       |  h    |
+|   i  |   j |    k     |    l  |
+```
+Output:
+
+| Col 1 | Col 2 | Col 3 | Col 4 |
+|------|-----|----------|-------|
+|   a  |  b  |    c     |  d    |
+|  e   |  f  |  g       |  h    |
+|   i  |   j |    k     |    l  |
+
+Columns can also be aligned to the left, right or center by add a colong `:` to
+the left, right or on both sides of the `-`'s of the table.
+
+```markdown
+| Right Col | Left Col | Center | Default |
+|----------:|:---------|:------:|---------|
+|        a  |       b  |    c   |    d    |
+|  e        |       f  |   g    |    h    |
+|   i       |        j |  k     |      l  |
+```
+Output:
+
+| Right Col | Left Col | Center | Default |
+|----------:|:---------|:------:|---------|
+|        a  |       b  |    c   |    d    |
+|  e        |       f  |   g    |    h    |
+|   i       |        j |  k     |      l  |
