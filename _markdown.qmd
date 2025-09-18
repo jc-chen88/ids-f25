@@ -35,7 +35,7 @@ Header 2
 ```
 Any amount of `=` and `-` signs will work to create those top two headings.
 
-## Paragraph and Line Break Convention
+### Paragraph and Line Break Convention
 To seperate text into paragraphs, make sure there is at least one blank space 
 between the blocks of texts.
 
@@ -46,6 +46,8 @@ is no blank line in this, then this block of text is one paragraph.
 This is an example of a second paragraph. This one is seperated by a blank line
 from the paragraph above to denote a different paragraph.
 ```
+**Output**:
+
 This is the first pargraph which can contain multiple lines, and as long there
 is no blank line in this, then this block of text is one paragraph.
 
@@ -55,12 +57,38 @@ from the paragraph above to denote a different paragraph.
 - - -
 
 To create a line break within a paragraph, end whatever line you're on with two
-spaces, then press enter/return to start a new line.
+spaces, then press enter/return to start a new line. The break tag `<br>` is 
+also sufficient.
 
 ```markdown
 This is one line.  
-This is another line that is seperated from the line above.
+This is another line that is seperated from the line above. <br>
+This is a third line seperated using the `<br>` break tag
 ```
+**Output:**
 
 This is one line.  
-This is another line that is seperated from the line above.
+This is another line that is seperated from the line above. <br>
+This is a third line seperated using the `<br>` break tag
+
+### Text Fromatting
+
+#### Bold and Italics
+
+Italic text, uses single asterisks (*) or underscores (_) around the text, while 
+bold text uses double asterisks or underscores. To make the text both bolded and 
+italicized, put three asterisks or underscores around the text.
+
+|                  Syntax                            | Output                |
+|----------------------------------------------------|-----------------------|
+| `*Italicized*` <br> `_Italicized_`                 | _Italicized_          |
+| `**Bolded**` <br> `__Bolded__`                     |  **Bolded**           |
+| `***bold & italics***` <br> ` ___bold & italics___`| ***bolded & italics***|
+
+Emphasis can also be placed within a word as well, but only `*` can be used, 
+not `_`.
+
+|                  Syntax              |            Output                   |
+|--------------------------------------|-------------------------------------|
+|`s*uperfragalis*t ex**pialidociou**s` | s*uperfragalis*t ex**pialidociou**s |
+
