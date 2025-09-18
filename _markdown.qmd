@@ -361,4 +361,39 @@ the code blocks.
 print('some python code')
 ```
 
-### Link embedding
+### Link Embedding
+Links in Markdown can either be added inline or as a reference.
+
+To add an **inline link**, use `[]` around the text that leads to the link, 
+followed by actually inputting the link in `()`.
+
+```markdown
+this is an example link that will lead to the 
+[Markdown Guide](https://www.markdownguide.org/)
+```
+**Output:** : This is an example link that will lead to the 
+[Markdown Guide](https://www.markdownguide.org/).
+
+Alternatively, for inline links, the URL can be directly added without linking 
+it to text by just using `<>` around the URL.
+
+```markdown
+Link to <https://www.markdownguide.org/>.
+```
+**Output:** Link to <https://www.markdownguide.org/>.
+
+For reference-style links, you can having text linked to the URL and a seperate 
+number or text that points to the link with `[]`
+
+```markdown
+Example of reference-style link leading to the [Markdown Guide][link].
+
+[link]: https://www.markdownguide.org
+```
+**Output:**
+
+Example of reference-style link leading to the [Markdown Guide][link].
+
+[link]: https://www.markdownguide.org/
+
+### Images
