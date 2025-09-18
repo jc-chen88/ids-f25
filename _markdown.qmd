@@ -62,7 +62,7 @@ also sufficient.
 
 ```markdown
 This is one line.  
-This is another line that is seperated from the line above. <br>
+This is a line that is seperated from the line above using two spaces <br>
 This is a third line seperated using the `<br>` break tag
 ```
 **Output:**
@@ -74,7 +74,6 @@ This is a third line seperated using the `<br>` break tag
 ### Text Fromatting
 
 #### Bolding and Italics
-
 *Italic* text, uses single asterisks (*) or underscores (_) around the text, 
 while **bold** text uses double asterisks or underscores. To make the text both 
 ***bolded and italicized***, put three asterisks or underscores around the text.
@@ -93,7 +92,6 @@ not `_`.
 |`s*uperfragalis*t ex**pialidociou**s` | s*uperfragalis*t ex**pialidociou**s |
 
 #### Strikethrough
-
 Strikethrough uses `~~` around the text to cross it out.
 
 |     Syntax              |         Output         |
@@ -101,8 +99,8 @@ Strikethrough uses `~~` around the text to cross it out.
 |`~~strikethrough text~~` | ~~strikethrough text~~ |
 
 #### Superscript and Subscript
+To superscript, use `^` around the desired text.
 
-To superscript, use `^` around the desired text.  
 For subscript, use `~` around the desired text.
 
 |   Syntax       |   Output       |
@@ -111,3 +109,16 @@ For subscript, use `~` around the desired text.
 |`subscript~2~`  | subscript~2~   |
 
 #### Underlining and Highlighting
+To underline, bracket the desired text with `[]`, and then follow that using 
+`{.underline}`.
+
+To highlight, bracket the desired text with `[]`, and follow that using 
+`{.mark}`. Alternatively you can start the text with `<mark>` and end it with 
+`</mark>`.
+
+|                  Syntax                     |      Output                   |
+|---------------------------------------------|-------------------------------|
+|`[underlined text]{.underline}`              | [underlined text]{.underline} |
+|`[highlighted]{.mark}` <br> `<mark>higlighted</mark>` | [highlighted]{.mark} |
+
+
