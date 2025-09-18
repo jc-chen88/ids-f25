@@ -71,6 +71,9 @@ This is one line.
 This is another line that is seperated from the line above. <br>
 This is a third line seperated using the `<br>` break tag
 
+> `<>` in Markdown is a HTML tag, which is another way to structure the
+document
+
 ### Text Formatting
 
 #### Bolding and Italics
@@ -121,6 +124,181 @@ To highlight, bracket the desired text with `[]`, and follow that using
 |`[underlined text]{.underline}`              | [underlined text]{.underline} |
 |`[highlighted]{.mark}` <br> `<mark>higlighted</mark>` | [highlighted]{.mark} |
 
+### Lists
+
+Lists and nested lists can be structured in Markdown either unordered or 
+ordered. For nested lists, make sure to include 4 spaces to properly indent the 
+nested list (applies to both ordered and unordered).
+
+#### Unordered Lists
+For unordered lists, `*`, `+`, or `-` can be used to make a list.
+
+```markdown
+* Item 1
+    * Subitem
+        * Another subitem
+* Item 2
+* Item 3
+```
+and
+
+```markdown
++ Item 1
+   + Subitem
+       + Another subitem
++ Item 2
++ Item 3
+```
+
+and 
+
+```markdown
+- Item 1
+   - Subitem
+       - Another subitem
+- Item 2
+- Item 3
+```
+as well a mix of all three:
+
+```markdown
+* Item 1
+   + Subitem
+       - Another subitem
+* Item 2
+* Item 3
+```
+
+all yield the same output:
+
+* Item 1
+   + Subitem
+       - Another subitem
+* Item 2
+* Item 3
+
+#### Ordered Lists
+Ordered lists use numbers with periods.
+
+```markdown
+1. Item 1
+2. Item 2
+    1. Sub item
+3. Item 3
+```
+The numbers don't necessarily have to be ordered, and they can be duplicated as
+well. Whatever number the list starts on will be the one that it will count from
+no matter the numbers that come after it.
+
+```markdown
+1. Item 1
+1. Item 2
+    1. Sub Item
+1. Item 3
+```
+
+```markdown
+1. Item 1
+4. Item 2
+    2. Sub Item
+7. Item 3
+```
+All three of these lists will yield the same result:
+
+1. Item 1
+4. Item 2
+    1. Sub Item
+7. Item 3
+
+However, if the list were to start on 2, it would start counting from 2 no 
+matter the order that follows.
+
+```markdown
+2. Item 1
+2. Item 2
+5. Item 3
+```
+**Output:**
+
+2. Item 1
+2. Item 2
+5. Item 3
+
+#### Task List
+To denote the lists as a series of tasks, use `- [ ]`, which is unchecked, 
+and ` [x]`, which is checked, at the beginning of the line.
+
+```markdown
+- [ ] Task 1
+- [x] Task 2
+```
+**Output:**
+
+- [ ] Task 1
+- [x] Task 2
+
+#### Definition lists
+Defintion lists can be created with the following convention:
+
+```markdown
+term
+: defintion
+
+term2
+: definition2
+```
+Output:
+
+term
+: defintion
+
+term2
+: definition2
+
+#### Some Additional Notes About Lists
+There are some additional features that can be done with the lists mentioned.
+
+A list can continue after a break in between. For ordered lists, the numbering
+still follows through after an interruption.
+
+```markdown
+1. Item 1
+
+interruption text
+
+2. Item 2
+```
+**Output:**
+
+1. Item 1
+
+interruption text
+
+2. Item 2
+
+Text than isn't numbered or in bullet points can also be added below list using
+four spaces for indenting. Code chunks can be added in this case as well.
+
+```markdown
+1. ordered list
+2. item 2
+    continued after indenting 4 spaces
+    ```python
+    print("Hello, World!")
+    ```
+    A. sub-sub-item 1
+```
+
+**Output:**
+
+1. ordered list
+2. item 2
+
+    continued after indenting 4 spaces
+   ```python
+   print("Hello, World!")
+   ```
+   A.  sub-sub-item 1
 ### Code
 
 #### Inline Code
@@ -182,3 +360,5 @@ the code blocks.
 ```{python}
 print('some python code')
 ```
+
+### Link embedding
