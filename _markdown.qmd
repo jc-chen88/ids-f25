@@ -73,11 +73,11 @@ This is a third line seperated using the `<br>` break tag
 
 ### Text Fromatting
 
-#### Bold and Italics
+#### Bolding and Italics
 
-Italic text, uses single asterisks (*) or underscores (_) around the text, while 
-bold text uses double asterisks or underscores. To make the text both bolded and 
-italicized, put three asterisks or underscores around the text.
+*Italic* text, uses single asterisks (*) or underscores (_) around the text, 
+while **bold** text uses double asterisks or underscores. To make the text both 
+***bolded and italicized***, put three asterisks or underscores around the text.
 
 |                  Syntax                            | Output                |
 |----------------------------------------------------|-----------------------|
@@ -92,3 +92,22 @@ not `_`.
 |--------------------------------------|-------------------------------------|
 |`s*uperfragalis*t ex**pialidociou**s` | s*uperfragalis*t ex**pialidociou**s |
 
+#### Strikethrough
+
+Strikethrough uses `~~` around the text to cross it out.
+
+|     Syntax              |         Output         |
+|-------------------------|------------------------|
+|`~~strikethrough text~~` | ~~strikethrough text~~ |
+
+#### Superscript and Subscript
+
+To superscript, use `^` around the desired text.  
+For subscript, use `~` around the desired text.
+
+|   Syntax       |   Output       |
+|----------------|----------------|
+|`superscript^2^`| superscript^2^ |
+|`subscript~2~`  | subscript~2~   |
+
+#### Underlining and Highlighting
