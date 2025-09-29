@@ -520,14 +520,17 @@ by a caption to the image wrapped in `[]`, and finally the file path or URL to
 the image enclosed with `()`.
 
 In addition, the image can be embedded with a link by first wrapping the 
-3 parameters mentioned above in `[]`, followed by the link wrapped in `()`.
+3 parameters mentioned above in `[]`, followed by the link wrapped in `()`. The 
+link can either be a local file path stored on your computer or a direct link 
+of the image found online. For reproducibility, this example uses a direct URL 
+pointing to an online image.
 
 ```markdown
-[![UConn Husky Logo](C:\Users\jinga\Downloads\uconnlogo.png)](https://uconn.edu/)
+[![UConn Husky Logo](https://lofrev.net/wp-content/photos/2016/06/uconn_huskies_logo.jpg)](https://uconn.edu/)
 ```
 Output:
 
-[![UConn Husky Logo](C:\Users\jinga\Downloads\uconnlogo.png)](https://uconn.edu/)
+[![UConn Husky Logo](https://lofrev.net/wp-content/photos/2016/06/uconn_huskies_logo.jpg)](https://uconn.edu/)
 
 ### Tables
 
