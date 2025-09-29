@@ -1,5 +1,5 @@
 ## Syntax of Markdown
-This section is prepared by Jingang Chen, an undergraduate junior pursuing  a 
+This section was prepared by Jingang Chen, an undergraduate junior pursuing  a 
 dual degree in computer science and statistical data science.
 
 ### Introduction
@@ -472,7 +472,7 @@ be done inline (enclosing using `$`) or for display math (enclosed by `$$`).
 |                  Syntax              |      Output         |
 |--------------------------------------|---------------------|
 |`Inline: $x^2 + y^2 = z^2$`           | Inline: $x^2 + y^2 = z^2$ |
-|`Display:` <br> `$$x^2 + y^2 = z^2$$` | Display: <br> $$x^2 + y^2 = z^2$$ |
+|`Display:` <br> `$$x^2 + y^2 = z^2$$` | Display: <br> $$x^2 + y^2 = z^2$$ {#eq-sample} |
 
 For mor information on how to use LaTeX expressions, visit 
 <https://www.overleaf.com/learn> and look under the "Mathematics" section.
@@ -528,15 +528,18 @@ pointing to an online image.
 ```markdown
 [![UConn Husky Logo](https://lofrev.net/wp-content/photos/2016/06/uconn_huskies_logo.jpg)](https://uconn.edu/)
 ```
-Output:
+**Output:**
 
-[![UConn Husky Logo](https://lofrev.net/wp-content/photos/2016/06/uconn_huskies_logo.jpg)](https://uconn.edu/)
+[![UConn Husky Logo](https://lofrev.net/wp-content/photos/2016/06/uconn_huskies_logo.jpg){#fig-sample}](https://uconn.edu/)
 
-### Tables
+
+
+### Tables {#sec-tables}
 
 To create tables, the `|` character is used to seperate the table into columns,
 while the `-` is used to seperate the headers of the table from the rest of the 
-data.
+data. After the table, a header can be included two lines below the table 
+starting with `: `.
 
 ```markdown
 | Col 1 | Col 2 | Col 3 | Col 4 |
@@ -544,6 +547,8 @@ data.
 |   a  |  b  |    c     |  d    |
 |  e   |  f  |  g       |  h    |
 |   i  |   j |    k     |    l  |
+
+: Sample Table 1
 ```
 Output:
 
@@ -552,6 +557,8 @@ Output:
 |   a  |  b  |    c     |  d    |
 |  e   |  f  |  g       |  h    |
 |   i  |   j |    k     |    l  |
+
+: Sample Table 1 {#tbl-sample1}
 
 Columns can also be aligned to the left, right or center by add a colong `:` to
 the left, right or on both sides of the `-`'s of the table.
@@ -562,14 +569,92 @@ the left, right or on both sides of the `-`'s of the table.
 |        a  |       b  |    c   |    d    |
 |  e        |       f  |   g    |    h    |
 |   i       |        j |  k     |      l  |
+
+: Sample Table 2
 ```
-Output:
+
+**Output:**
 
 | Right Col | Left Col | Center | Default |
 |----------:|:---------|:------:|---------|
 |        a  |       b  |    c   |    d    |
 |  e        |       f  |   g    |    h    |
 |   i       |        j |  k     |      l  |
+
+: Sample Table 2
+
+### Cross Referencing
+Prior to cross referencing a section, there must be a label attached to the 
+section that is being referenced. This is done by using `{}` after the section 
+and giving it a label inside of it starting with `#sec-` followed by anything 
+else after it.
+
+```markdown
+### Tables {#sec-tables}
+```
+Then, to reference the section, use the `@` followed by the label specified to 
+create a direct link to the section. Optionally, you can wrap it around `[]` and 
+add any additional text to the link.
+```markdown
+Refer back to the Tables section in [section @sec-tables].
+```
+**Output:**
+
+Refer back to the Tables section in [section @sec-tables].
+
+To refer to figures and images, make sure to input the label after the URL. 
+Make sure in the label to start with `#fig-` to specify that it is a figure that 
+is being referenced.
+
+```markdown
+[![UConn Husky Logo](https://lofrev.net/wp-content/photos/2016/06/uconn_huskies_logo.jpg){#fig-sample}](https://uconn.edu/)
+```
+
+Now it can be referred back with the same convention as referencing a section:
+```markdown
+This refers @fig-sample in the Images section.
+```
+**Output:**
+
+This refers @fig-sample in the Images section.
+
+To cross reference tables, include the label on the line where the header is 
+specified. Make sure to start the label with `#tbl-` to specify that it's a 
+table that is being referenced.
+
+```markdown
+| Col 1 | Col 2 | Col 3 | Col 4 |
+|------|-----|----------|-------|
+|   a  |  b  |    c     |  d    |
+|  e   |  f  |  g       |  h    |
+|   i  |   j |    k     |    l  |
+
+: Sample Table 1 {#tbl-sample1}
+```
+
+Now to reference the table back:
+```markdown
+@tbl-sample1 refers back to the first table in the Tables section.
+```
+**Output:**
+
+@tbl-sample1 refers back to the first table in the Tables section.
+
+Finally, to reference an equation, make sure to include the label after the 
+equation, outside of the `$$` starting with `#eq-`.
+
+```{markdown}
+$$x^2 + y^2 = z^2$$ {#eq-sample}
+```
+
+Now to reference the equation from the Equations section back:
+
+```{markdown}
+@eq-sample is the Pythagorean theorem referenced from the Equations section.
+```
+**Output:**
+
+@eq-sample is the Pythagorean theorem referenced from the Equations section.
 
 ### Footnotes
 Footnotes, often denoted by superscripts, are placed at the bottom of 
@@ -581,7 +666,7 @@ reference that footnote in a newline and put whatever note that is needed.
 
 ```markdown
 This is where you can place a footnote,[^1] sometimes multiple can be placed in 
-one sentence[^longnote]
+one sentence.[^longnote]
 
 [^1]: This is a footnote.
 
